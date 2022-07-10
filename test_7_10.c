@@ -1,13 +1,18 @@
-//å¤´æ–‡ä»¶ åç¼€.h
 #include<stdio.h>
 
-//ç¨‹åºå…¥å£ main() å‡½æ•°(æ–¹æ³•)
-//ä¸€ä¸ªç¨‹åºåªæœ‰ä¸€ä¸ªmainå‡½æ•°
-//è¿™é‡Œçš„int ä¸ºå‡½æ•°çš„è¿”å›å€¼ç±»å‹
-int main() 
+int main()
 {
-	//å¤´æ–‡ä»¶é‡Œçš„è°ƒç”¨çš„å‡½æ•°(æ–¹æ³•) printf()å«åº“å‡½æ•°
-	printf("Hello World\nä½ ä»¬å¥½");
-	//return:è¿”å›å‡½æ•°çš„è¿”å›å€¼ç±»å‹,å¹¶ç»“æŸå‡½æ•°
+	//sizeof()º¯Êı ·µ»ØÊı¾İÀàĞÍËùÕ¼µÄ×Ö½Ú
+	// 1 size£¨×Ö½Ú£©= 8 bit£¨±ÈÌØ£©
+	// 1 MB = 1024 size
+	// 1 GB = 1024 MB
+	// 1 TB = 1024 GB
+	printf("char: %d×Ö½Ú\n", sizeof(char));
+	printf("short: %d×Ö½Ú\n",sizeof(short));
+	printf("int: %d×Ö½Ú\n", sizeof(int));
+	printf("long: %d×Ö½Ú\n", sizeof(long));
+	printf("long long: %d×Ö½Ú\n", sizeof(long long));
+	printf("float: %d×Ö½Ú\n", sizeof(float));
+	printf("double: %d×Ö½Ú\n", sizeof(double));
 	return 0;
 }
